@@ -11,13 +11,14 @@ https://github.com/IMD555/IMD555.github.io
 * LaVie Z(Core i7 4500U,4GB,512GB)
 * 自作機(Core i5 6600K,24GB,256GB+1TB(RAID1)+4TB)
 ### スマホ
-* Windows 10 Mobile機1
-* Windows 10 Mobile機2
+* Windows 10 Mobile機 たくさん
+* Nokia 9
 * iPhone 5C
 ### はんだごて
 * HAKKO FX-951
 * Goot TQ-95
 * Goot CXR-31
+* HAKKO FR-301
 ### CNC
 |種類|メーカー|型番|スペック| 
 |:----:|:----:|:----:|:----:|
