@@ -39,6 +39,3 @@ https://twitter.com/IMD555
 |outlook  |ほげほげ@outlook.com     |
 |gmail    |ふがふが@gmail.com       |
 |yahoo    |ごにょごにょ@yahoo.co.jp |
-
-
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe8yyWIPMa-cB4NiONBPLOeMuwXxO6gpRNIMOQoK9J4qOI-fw/viewform?embedded=true" width="640" height="1889" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
