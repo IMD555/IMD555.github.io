@@ -1,4 +1,5 @@
 Visual Studio Code Serverとはなんぞや
+
 https://code.visualstudio.com/docs/remote/vscode-server
 
 できるようになること
@@ -100,3 +101,7 @@ VS Codeでアクセスするには、左端の「リモートエクスプロー�
 ```
 [user@SV:~$] rm -r .vscode*
 ```
+
+# デーモン化する
+
+TODO: systemctl enable できるように設定する。
