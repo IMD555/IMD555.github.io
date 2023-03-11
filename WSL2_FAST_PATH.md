@@ -9,8 +9,15 @@ echo "[interop]\nappendWindowsPath = false" >> /etc/wsl.conf
 exit
 ```
 
-1. VS Codeとexplorerとメモ帳だけは開けるようにする。
+2. VS Codeとexplorerとメモ帳だけは開けるようにする。
 
+```
+echo alias code=/mnt/c/Users/user/AppData/Local/Programs/Microsoft\\\\\\\ VS\\\\\\\ Code/bin/code >> ~/.bashrc
+echo "alias explorer=/mnt/c/Windows/explorer.exe" >> ~/.bashrc
+echo "alias notepad=/mnt/c/Windows/notepad.exe" >> ~/.bashrc
+```
+
+たぶん ↓ でもできる
 ```
 mkdir win_exe
 cd win_exe
