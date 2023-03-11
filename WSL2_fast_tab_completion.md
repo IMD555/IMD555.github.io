@@ -17,9 +17,11 @@ echo alias code=\"\\\"/mnt/c/Users/user/AppData/Local/Programs/Microsoft VS Code
 echo alias explorer=/mnt/c/Windows/explorer.exe >> ~/.bashrc
 echo alias notepad=/mnt/c/Windows/notepad.exe >> ~/.bashrc
 ```
+
 (次のログインから有効)
 
-たぶん ↓ でもできる
+たぶん ↓ でもできる（どっちがいいんだろう？）
+
 ```
 cd
 mkdir win_exe
