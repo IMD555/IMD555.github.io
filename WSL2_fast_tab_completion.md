@@ -10,7 +10,7 @@ exit
 
 2. VS Codeとexplorerとメモ帳だけは開けるようにする。
 
-\"\\\"path to exe including spaces\\\"\"
+\"\\\"path to exe  spaces\\\"\"
 
 ```
 echo alias code=\"\\\"/mnt/c/Users/user/AppData/Local/Programs/Microsoft VS Code/bin/code\\\"\" >> ~/.bashrc
