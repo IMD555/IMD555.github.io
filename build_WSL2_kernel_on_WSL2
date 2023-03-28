@@ -1,0 +1,18 @@
+# with debian
+
+install gcc?
+
+sudo apt install usbip hwdata
+sudo apt-get install usbutils
+sudo apt install pahole
+sudo apt install dwarves
+ 
+git clone https://github.com/microsoft/WSL2-Linux-Kernel.git
+cd WSL2-Linux-Kernel/
+cp ./Microsoft/config-wsl ./.config
+make -j8
+make menuconfig
+# <*>   USB Mass Storage support
+# <*>     Realtek Card Reader support
+make -j8
+ls vmlinux
