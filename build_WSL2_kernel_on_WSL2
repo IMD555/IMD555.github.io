@@ -2,7 +2,7 @@
 
 install gcc?
 
-sudo apt install usbip hwdata usbutils pahole dwarves minicom
+sudo apt install usbip hwdata usbutils dwarves minicom
  
 git clone https://github.com/microsoft/WSL2-Linux-Kernel.git
 cd WSL2-Linux-Kernel/
