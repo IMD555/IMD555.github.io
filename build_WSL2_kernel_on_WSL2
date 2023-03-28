@@ -20,4 +20,4 @@ cp vmlinux /mnt/c/WSL2_kernel/vmlinux_customized
 ## pwsh # usbipd wsl attach --busid X-X
 
 sudo minicom -D /dev/ttyUSB0
-HWFC動かない?
+ -s でHWFC切る
