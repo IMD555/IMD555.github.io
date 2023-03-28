@@ -16,3 +16,4 @@ make menuconfig
 # <*>     Realtek Card Reader support
 make -j8
 ls vmlinux
+cp vmlinux /mnt/c/WSL2_kernel/vmlinux_customized
