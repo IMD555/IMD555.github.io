@@ -2,10 +2,7 @@
 
 install gcc?
 
-sudo apt install usbip hwdata
-sudo apt-get install usbutils
-sudo apt install pahole
-sudo apt install dwarves
+sudo apt install usbip hwdata usbutils pahole dwarves minicom
  
 git clone https://github.com/microsoft/WSL2-Linux-Kernel.git
 cd WSL2-Linux-Kernel/
@@ -18,3 +15,8 @@ make menuconfig
 make -j8
 ls vmlinux
 cp vmlinux /mnt/c/WSL2_kernel/vmlinux_customized
+
+## pwsh # usbipd wsl list
+## pwsh # usbipd wsl attach --busid X-X
+
+sudo minicom -D /dev/ttyUSB0
