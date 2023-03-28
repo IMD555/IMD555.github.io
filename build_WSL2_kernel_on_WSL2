@@ -14,6 +14,7 @@ make -j8
 make menuconfig
 # <*>   USB Mass Storage support
 # <*>     Realtek Card Reader support
+# Ext4,USB CDC?
 make -j8
 ls vmlinux
 cp vmlinux /mnt/c/WSL2_kernel/vmlinux_customized
