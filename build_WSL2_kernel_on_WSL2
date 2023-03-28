@@ -17,7 +17,10 @@ ls vmlinux
 cp vmlinux /mnt/c/WSL2_kernel/vmlinux_customized
 
 ## pwsh # usbipd wsl list
-## pwsh # usbipd wsl attach --busid X-X
+## pwsh # usbipd wsl attach -a --busid X-X &
 
 sudo minicom -D /dev/ttyUSB0
  -s でHWFC切る
+
+## pwsh # Get-Job -State Running
+## pwsh # Stop-Job X
