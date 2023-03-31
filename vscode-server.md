@@ -104,4 +104,22 @@ VS Codeでアクセスするには、左端の「リモートエクスプロー�
 
 # デーモン化する
 
-TODO: systemctl enable できるように設定する。
+```
+[user@SV:~$] nano /etc/systemd/system/vscode-server.service
+[user@SV:~$] cat /etc/systemd/system/vscode-server.service
+[Unit]
+Description=VS Code Server Service
+
+[Service]
+User=user
+ExecStart=/home/user/code tunnel
+
+[Install]
+WantedBy=multi-user.target
+
+[user@SV:~$] sudo systemctl start vscode-server.service
+[user@SV:~$] sudo systemctl enable vscode-server.service
+[user@SV:~$] systemctl status vscode-server.service
+```
+
+再起動してもつながることを確認する。
