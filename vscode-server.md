@@ -102,7 +102,7 @@ VS Codeでアクセスするには、左端の「リモートエクスプロー�
 
 消すときはここから。
 
-<img width="233" alt="image" src="https://user-images.githubusercontent.com/16854724/236639483-c62b3eaf-f57d-4811-a400-acb2da34ac06.png">
+<img width="239" alt="image" src="https://user-images.githubusercontent.com/16854724/236639519-5d28a708-7bad-4e8c-8437-33cd470ff100.png">
 
 ```
 [user@SV:~$] rm -r .vscode*
