@@ -89,7 +89,7 @@ Open this link in your browser https://vscode.dev/tunnel/sv
 ```
 
 この URL で WEB ブラウザからアクセスできる。
-https://vscode.dev/tunnel/sv/home/user とかやると、/home/user を開ける。
+https://vscode.dev/tunnel/sv/home/user とかやると、`/home/user`を開ける。
 お気に入り登録もおすすめ。
 
 VS Codeでアクセスするには、左端の「リモートエクスプローラー」からTunnelsの一覧を見る。
