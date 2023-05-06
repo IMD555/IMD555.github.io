@@ -104,6 +104,9 @@ VS Codeでアクセスするには、左端の「リモートエクスプロー�
 
 # デーモン化する
 
+`cat`の結果が同じになるように`nano`とかでファイル作成、編集する。
+ユーザー名が`user`ではない場合は気を付ける。
+
 ```
 [user@SV:~$] sudo nano /etc/systemd/system/vscode-server.service
 [user@SV:~$] cat /etc/systemd/system/vscode-server.service
@@ -120,6 +123,26 @@ WantedBy=multi-user.target
 [user@SV:~$] sudo systemctl start vscode-server.service
 [user@SV:~$] sudo systemctl enable vscode-server.service
 [user@SV:~$] systemctl status vscode-server.service
+● vscode-server.service - VS Code Server Service
+     Loaded: loaded (/etc/systemd/system/vscode-server.service; enabled; preset: enabled)
+     Active: active (running) since Sun 2023-05-07 02:12:14 JST; 22min ago
+   Main PID: 628 (code)
+      Tasks: 61 (limit: 1958)
+        CPU: 4min 37.345s
+     CGroup: /system.slice/vscode-server.service
+             ├─ 628 /home/user/code tunnel
+             ├─ 838 sh /home/user/.vscode-cli/servers/Stable-252e5463d60e63238250799aef7375787f68b>
+             ├─ 842 /home/user/.vscode-cli/servers/Stable-252e5463d60e63238250799aef7375787f68b4ee>
+             ├─ 853 /home/user/.vscode-cli/servers/Stable-252e5463d60e63238250799aef7375787f68b4ee>
+             ├─ 998 /home/user/.vscode-cli/servers/Stable-252e5463d60e63238250799aef7375787f68b4ee>
+             ├─1006 /home/user/.vscode-cli/servers/Stable-252e5463d60e63238250799aef7375787f68b4ee>
+             ├─1072 /bin/bash --init-file /home/user/.vscode-cli/servers/Stable-252e5463d60e632382>
+             ├─2153 systemctl status vscode-server.service
+             └─2154 less
+
 ```
 
 再起動してもつながることを確認する。
+
+`/etc/systemd/system/vscode-server.service`を編集した後、反映させたい場合は再起動か
+`sudo systemctl daemon-reload`。
