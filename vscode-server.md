@@ -79,7 +79,7 @@ PCで https://github.com/login/device にアクセスし、表示されたコー
 ? What would you like to call this machine? (pensive-kite) › 
 ```
 
-nasにした例
+"sv"にした例
 
 ```
 ✔ What would you like to call this machine? · sv
