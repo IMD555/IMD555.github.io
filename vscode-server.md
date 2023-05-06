@@ -105,7 +105,7 @@ VS Codeでアクセスするには、左端の「リモートエクスプロー�
 # デーモン化する
 
 ```
-[user@SV:~$] nano /etc/systemd/system/vscode-server.service
+[user@SV:~$] sudo nano /etc/systemd/system/vscode-server.service
 [user@SV:~$] cat /etc/systemd/system/vscode-server.service
 [Unit]
 Description=VS Code Server Service
