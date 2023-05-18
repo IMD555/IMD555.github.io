@@ -36,3 +36,14 @@ cd
 参考:
 https://4geek.net/wsl-tips/
 https://qiita.com/nanagami1369/items/630f99813bf384a84d80
+
+
+Windowsのバージョンによって？explorerだけ動かないことがある？(25352.1で確認)
+aliasの代わりに.bashrcに↓を書くといいかも
+```
+function explorer(){
+dir=$(wslpath -w "$@")
+#echo $dir
+/mnt/c/Windows/explorer.exe $dir
+}
+```
