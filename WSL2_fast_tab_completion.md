@@ -11,23 +11,30 @@ exit
 2. VS Codeとexplorerとメモ帳だけは開けるようにする。
 
 ```
-win_user=user
+read -p "put your windows user name: " win_user 
+
+echo \################################################################################## >> ~/.bashrc
+echo https://github.com/IMD555/IMD555.github.io/edit/master/WSL2_fast_tab_completion.md >> ~/.bashrc
+echo \################################################################################## >> ~/.bashrc
 
 echo alias code=\"\\\"/mnt/c/Users/($win_user)/AppData/Local/Programs/Microsoft VS Code/bin/code\\\"\" >> ~/.bashrc
 
 echo alias notepad=/mnt/c/Windows/notepad.exe >> ~/.bashrc
 
-function explorer(){
-dir=$(wslpath -w "$@")
-#echo $dir
-/mnt/c/Windows/explorer.exe $dir
-}
+echo "function explorer(){
+dir=\$(wslpath -w \"\$@\")
+#echo \$dir
+/mnt/c/Windows/explorer.exe \$dir
+}" >> ~/.bashrc
+```
 
-#ついでに
-alias ll='ls -alh'
+3. ついでに自分がよく使うやつ
+
+```
+echo "alias ll='ls -alh'
 alias dush='du -sh'
 alias tar_comp='tar acvf'
-alias tar_decomp='tar axvf'
+alias tar_decomp='tar axvf'" >> ~/.bashrc
 ```
 
 (次のログインから有効)
