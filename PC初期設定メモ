@@ -1,0 +1,14 @@
+winget?
+https://www.microsoft.com/store/productId/9NBLGGH4NNS1?ocid=pdpshare
+
+winget install Microsoft.PowerShell
+
+
+hyper...
+WSL
+VM
+もう一つ
+
+wsl --install debian
+sudo apt update && apt list --upgradable && sudo apt upgrade -y && sudo apt autoremove
+
