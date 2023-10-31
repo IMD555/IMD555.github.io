@@ -17,7 +17,7 @@ echo \##########################################################################
 echo https://github.com/IMD555/IMD555.github.io/edit/master/WSL2_fast_tab_completion.md >> ~/.bashrc
 echo \################################################################################## >> ~/.bashrc
 
-echo alias code=\"\\\"/mnt/c/Users/($win_user)/AppData/Local/Programs/Microsoft VS Code/bin/code\\\"\" >> ~/.bashrc
+echo alias code=\"\\\"/mnt/c/Users/$win_user/AppData/Local/Programs/Microsoft VS Code/bin/code\\\"\" >> ~/.bashrc
 
 echo alias notepad=/mnt/c/Windows/notepad.exe >> ~/.bashrc
 
