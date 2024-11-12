@@ -13,9 +13,9 @@ exit
 ```
 read -p "put your windows user name: " win_user 
 
-echo \################################################################################## >> ~/.bashrc
-echo https://github.com/IMD555/IMD555.github.io/edit/master/WSL2_fast_tab_completion.md >> ~/.bashrc
-echo \################################################################################## >> ~/.bashrc
+echo \###################################################################################### >> ~/.bashrc
+echo \# https://github.com/IMD555/IMD555.github.io/edit/master/WSL2_fast_tab_completion.md \# >> ~/.bashrc
+echo \###################################################################################### >> ~/.bashrc
 
 echo alias code=\"\\\"/mnt/c/Users/$win_user/AppData/Local/Programs/Microsoft VS Code/bin/code\\\"\" >> ~/.bashrc
 
@@ -89,3 +89,17 @@ cd
 echo "PATH+=:$HOME/win_exe" >> .profile
 echo "PATH+=:/mnt/c/Users/user/AppData/Local/Programs/Microsoft\ VS\ Code/bin" >> .profile
 ```
+
+
+いつのまにかexplorerもいけるようになってた？
+
+read -p "put your windows user name: " win_user 
+
+echo \###################################################################################### >> ~/.bashrc
+echo \# https://github.com/IMD555/IMD555.github.io/edit/master/WSL2_fast_tab_completion.md \# >> ~/.bashrc
+echo \###################################################################################### >> ~/.bashrc
+
+echo alias code=\"\\\"/mnt/c/Users/$win_user/AppData/Local/Programs/Microsoft VS Code/bin/code\\\"\" >> ~/.bashrc
+echo alias notepad=/mnt/c/Windows/notepad.exe >> ~/.bashrc
+echo alias explorer=/mnt/c/Windows/explorer.exe >> ~/.bashrc
+" >> ~/.bashrc
